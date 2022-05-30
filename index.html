@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">     <!-- imports font awesome fonts/icons -->
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="card-container">
+        <div class="search">
+            <input type="text" class="search-bar" placeholder="Search">     <!-- placeholder will have "Search" in search box when nothing is typed -->
+            <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="weather loading">
+            <h2 class="city">Toronto</h2>
+            <img src="https://www.openweathermap.org/img/wn/04n@2x.png" alt="" class="icon">
+            <div class="temp-container">
+                <h1 class="temp">27</h1>
+                <div class="temp-degree">°</div>
+            </div>
+            <div class="description"></div>
+            <div class="temp-high-low-container">
+                <div class="temp-min">H: 20°</div>
+                <div class="temp-max">L: 20°</div>
+            </div>
+            <div class="description-container">
+                <div class="humidity-container">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="humidity-container-two">
+                        <div class="humidity-percent">68</div>
+                        <div class="humidity">Humidity</div>
+                    </div>
+                </div>
+                <div class="wind-container">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="wind-container-two">
+                        <div class="wind-speed">6 km/h</div>
+                        <div class="wind">Wind Speed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
